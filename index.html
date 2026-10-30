@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive FAQ accordion built with HTML, CSS and JavaScript.">
+  <title>FAQ Accordion | Week 2 UI Component</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <p class="eyebrow">WEEK 2 · INTERACTIVE UI COMPONENT</p>
+      <h1>Frequently Asked Questions</h1>
+      <p class="subtitle">Quick answers to common questions. Select a question to read more.</p>
+    </header>
+    <section class="faq-list" aria-label="Frequently asked questions">
+      <article class="faq-item">
+        <h2><button class="faq-question" id="question-1" type="button" aria-expanded="true" aria-controls="answer-1"><span>What is an FAQ accordion?</span><span class="chevron" aria-hidden="true">+</span></button></h2>
+        <div class="faq-answer" id="answer-1" role="region" aria-labelledby="question-1"><p>An FAQ accordion lets users reveal or hide answers by activating a question. It keeps a page organised and easy to scan.</p></div>
+      </article>
+      <article class="faq-item">
+        <h2><button class="faq-question" id="question-2" type="button" aria-expanded="false" aria-controls="answer-2"><span>Which technologies are used?</span><span class="chevron" aria-hidden="true">+</span></button></h2>
+        <div class="faq-answer" id="answer-2" role="region" aria-labelledby="question-2" hidden><p>This component uses semantic HTML for structure, CSS for responsive styling and vanilla JavaScript for interaction. No external library is required.</p></div>
+      </article>
+      <article class="faq-item">
+        <h2><button class="faq-question" id="question-3" type="button" aria-expanded="false" aria-controls="answer-3"><span>Does it work on mobile devices?</span><span class="chevron" aria-hidden="true">+</span></button></h2>
+        <div class="faq-answer" id="answer-3" role="region" aria-labelledby="question-3" hidden><p>Yes. Flexible widths, readable spacing and a small-screen media query adapt the layout to phones, tablets and desktops.</p></div>
+      </article>
+      <article class="faq-item">
+        <h2><button class="faq-question" id="question-4" type="button" aria-expanded="false" aria-controls="answer-4"><span>Can I use it with a keyboard?</span><span class="chevron" aria-hidden="true">+</span></button></h2>
+        <div class="faq-answer" id="answer-4" role="region" aria-labelledby="question-4" hidden><p>Yes. Native buttons support Tab, Enter and Space keyboard interaction. A visible focus style helps users identify the active control.</p></div>
+      </article>
+      <article class="faq-item">
+        <h2><button class="faq-question" id="question-5" type="button" aria-expanded="false" aria-controls="answer-5"><span>What if JavaScript is unavailable?</span><span class="chevron" aria-hidden="true">+</span></button></h2>
+        <div class="faq-answer" id="answer-5" role="region" aria-labelledby="question-5" hidden><p>The script enhances the page after loading. If JavaScript is unavailable, the CSS fallback keeps answers visible and the information readable.</p></div>
+      </article>
+    </section>
+    <footer class="page-footer"><p>Built with HTML, CSS and vanilla JavaScript.</p></footer>
+  </main>
+</body>
+</html>
